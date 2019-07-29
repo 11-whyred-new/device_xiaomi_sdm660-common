@@ -79,6 +79,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
  $(LOCAL_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
 
+# AR config
+PRODUCT_COPY_FILES += \
+   device/xiaomi/lavender/configs/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.ar.xml
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl:32 \
