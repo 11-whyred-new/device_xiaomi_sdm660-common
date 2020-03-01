@@ -33,7 +33,7 @@ on early-init
 
 on init
     write /dev/stune/foreground/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.boost 5
+    write /dev/stune/top-app/schedtune.boost 1
     write /dev/stune/top-app/schedtune.prefer_idle 1
 
 # Add a cpuset for the camera daemon
@@ -182,6 +182,12 @@ on boot
 
     # Touchpanel
     chown system system /sys/touchpanel/double_tap
+
+on boot
+    # set default schedtune value for foreground/top-app (only affects EAS)
+    write /dev/stune/foreground/schedtune.prefer_idle 1
+    write /dev/stune/top-app/schedtune.boost 1
+    write /dev/stune/top-app/schedtune.prefer_idle 1
 
 #Peripheral manager
 service vendor.per_mgr /system/vendor/bin/pm-service
