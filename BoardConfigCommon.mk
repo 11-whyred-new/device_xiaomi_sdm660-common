@@ -51,6 +51,7 @@ AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 BOARD_USES_ALSA_AUDIO := true
 USE_CUSTOM_AUDIO_POLICY := 1
 BOARD_SUPPORTS_SOUND_TRIGGER := true
+AUDIO_FEATURE_ENABLED_SSR := true
 AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := false
 
@@ -151,6 +152,11 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
+
+TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
+
+
 
 # Inherit the proprietary files
 include vendor/xiaomi/sdm660-common/BoardConfigVendor.mk
