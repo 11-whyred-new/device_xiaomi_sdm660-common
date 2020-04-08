@@ -1,4 +1,4 @@
-# Biometric
+|# Biometric
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_sdm660   u:object_r:hal_fingerprint_sdm660_exec:s0
 
 # Fingerprint
@@ -16,6 +16,10 @@
 # This is labeled as public_adsprpcd_file as it needs to be read by apps
 # (e.g. Google Camera App)
 /mnt/vendor/dsp/fastrpc_shell_3                 u:object_r:public_adsprpcd_file:s0
+
+# HW Info
+/sys/devices/platform/HardwareInfo(/.*)? u:object_r:sysfs_info:s0
+/sys/devices/platform/HardwareInfo/gsensor  u:object_r:sysfs_info:s0
 
 # IR
 /dev/lirc0                                      u:object_r:spidev_device:s0
