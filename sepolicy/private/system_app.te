@@ -4,3 +4,5 @@ get_prop(system_app, vendor_persist_camera_prop)
 # torch
 allow system_app sysfs_tbrightness:file { open getattr write };
 allow system_app sysfs_leds:dir search;
+allow system_app vendor_default_prop:file { getattr open read };
+allow system_app vendor_default_prop:file {map};
