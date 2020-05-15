@@ -8,5 +8,9 @@ dontaudit untrusted_app_27 serialno_prop:file { getattr open read };
 allow untrusted_app_27 sysfs_devfreq:dir { search };
 allow untrusted_app_27 theme_prop:file { getattr };
 allow untrusted_app_27 untrusted_app_27:udp_socket { ioctl };
+allow untrusted_app_27 proc:file { read };
+allow untrusted_app_27 proc_qtaguid_stat:file { read };
+allow untrusted_app_27 proc_zoneinfo:file { read };
+allow untrusted_app_27 app_data_file:file { execute };
 get_prop(untrusted_app_27, persist_camera_prop)
 
