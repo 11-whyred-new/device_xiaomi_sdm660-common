@@ -2,5 +2,7 @@ type hal_fingerprint_prop, property_type;
 type mlipay_prop, property_type;
 type thermal_engine_prop, property_type;
 type vendor_camera_prop, property_type;
+type vendor_adsprpc_prop, property_type;
 type dirac_prop, property_type;
-
+# PowerHal
+type power_prop, property_type;
