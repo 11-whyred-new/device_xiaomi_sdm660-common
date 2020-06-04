@@ -1,0 +1,2 @@
+allow bluetooth gpuservice:binder { call };
+allow bluetooth sysfs_kgsl:dir { search };
