@@ -1,2 +1,3 @@
 allow mediaprovider radio_service:service_manager { find };
+allow mediaprovider gpuservice:binder { call };
 
