@@ -13,5 +13,7 @@ allow untrusted_app_27 proc_qtaguid_stat:file { read };
 allow untrusted_app_27 proc_zoneinfo:file { read };
 allow untrusted_app_27 app_data_file:dir { search };
 allow untrusted_app_27 app_data_file:file { execute };
+allow untrusted_app_27 vendor_default_prop:file { getattr  open  read };
+allow untrusted_app_27 vendor_default_prop:file { getattr  open  read };
 get_prop(untrusted_app_27, persist_camera_prop)
 
