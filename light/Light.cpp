@@ -204,7 +204,7 @@ void Light::applyNotificationState(const LightState& state) {
         int32_t step_duration = kRampStepDuration;
         int32_t pause_hi = state.flashOnMs - (step_duration * kBrightnessRamp.size() * 2);
         if (pause_hi < 0) {
-            step_duration = state.flashOnMs / (kBrightnessRamp.size() * 2);
+            //step_duration = state.flashOnMs / (kBrightnessRamp.size() * 2);
             pause_hi = 0;
         }
 
