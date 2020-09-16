@@ -87,6 +87,7 @@ vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.camera.preview.ubwc=0
 vendor.video.disable.ubwc=1
 vidc.enc.dcvs.extra-buff-count=2
+sys.display-size=3840x2160
 
 # Display
 debug.sf.early_phase_offset_ns=500000
