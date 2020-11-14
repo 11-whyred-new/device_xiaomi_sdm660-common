@@ -8,3 +8,5 @@ allow platform_app sysfs_kgsl:file { getattr open read };
 allow platform_app sysfs_fps:file { getattr open read };
 
 get_prop(platform_app, exported_camera_prop)
+allow platform_app blkio_dev:dir search;
+allow platform_app hal_embmssl_hwservice:hwservice_manager find;
