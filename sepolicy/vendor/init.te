@@ -9,4 +9,5 @@ allow init sysfs_touchpanel:file { open  write };
 allow init vendor_file:file { execute_no_trans };
 allow init socket_device:sock_file { unlink setattr create };
 allow init su:process { noatsecure  rlimitinh  siginh  transition };
-
+# Fastcharge
+allow init sysfs_fcharge:file { write open };
