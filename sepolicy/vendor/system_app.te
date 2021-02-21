@@ -26,6 +26,8 @@ allow system_app sysfs_kgsl:lnk_file { read };
 
 
 allow system_app sysfs_touchboost:file { open read getattr write };
+# USB Fastcharge
+allow system_app sysfs_usbcharge:file { open read getattr write };
 # Fastcharge
 allow system_app sysfs_fcharge:file { open read getattr write };
 
