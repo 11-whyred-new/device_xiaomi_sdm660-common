@@ -107,6 +107,9 @@ ro.vendor.display.cabl=0
 vendor.display.disable_skip_validate=1
 vendor.display.enable_default_color_mode=1
 vendor.gralloc.enable_fb_ubwc=1
+debug.sf.high_fps_early_phase_offset_ns=6100000 
+debug.sf.high_fps_early_gl_phase_offset_ns=9000000 
+debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
