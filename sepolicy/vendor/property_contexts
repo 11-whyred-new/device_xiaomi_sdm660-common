@@ -71,9 +71,6 @@ wifi.active.interface               u:object_r:exported_wifi_prop:s0
 persist.sys.theme.accentcolor           u:object_r:theme_prop:s0
 persist.sys.theme.gradientcolor         u:object_r:theme_prop:s0
 
-# HAL3
-persist.camera.HAL3.enable                    u:object_r:camera_prop:s0
-
 # GPUboost
 persist.gpuboost.profile           u:object_r:gpuboost_prop:s0
 
