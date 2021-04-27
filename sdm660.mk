@@ -404,7 +404,8 @@ PRODUCT_PACKAGES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl:64 \
-    android.hardware.vibrator@1.0-service
+    android.hardware.vibrator@1.0-service \
+    android.frameworks.sensorservice@1.0
 
 # VNDK
 PRODUCT_PACKAGES += \
