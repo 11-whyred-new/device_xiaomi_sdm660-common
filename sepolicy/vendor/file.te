@@ -34,3 +34,8 @@ type sysfs_vddrestrict, sysfs_type, fs_type;
 
 # Smart Charging
 type sysfs_scharge, sysfs_type, fs_type;
+
+# Powerstats
+type sysfs_iio_devices, fs_type, sysfs_type;
+type sysfs_power_stats, sysfs_type, fs_type;
+type sysfs_power_stats_ignore, sysfs_type, fs_type;
