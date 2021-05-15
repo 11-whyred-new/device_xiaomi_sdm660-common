@@ -320,7 +320,12 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-# Perf
+# Pixel offline charging animation
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
+# Perfd (dummy)
 PRODUCT_PACKAGES += \
     libqti-perfd-client
 
