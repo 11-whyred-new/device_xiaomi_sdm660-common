@@ -9,3 +9,4 @@ allow platform_app sysfs_fps:file { getattr open read };
 allow platform_app vendor_default_prop:file { read };
 allow platform_app sysfs_kgsl:dir { search };
 
+get_prop(platform_app, exported_camera_prop)
