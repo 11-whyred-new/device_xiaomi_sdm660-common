@@ -44,6 +44,11 @@ persist.vendor.sys.provision.status     u:object_r:mlipay_prop:s0
 vendor.powerhal.dalvik.                 u:object_r:vendor_power_prop:s0
 vendor.powerhal.                        u:object_r:vendor_power_prop:s0
 
+# Radio
+persist.vendor.data.offload_ko_load     u:object_r:vendor_radio_prop:s0
+persist.vendor.data.shsusr_load         u:object_r:vendor_radio_prop:s0
+persist.vendor.data.qmipriod_load       u:object_r:vendor_radio_prop:s0
+
 # RIL
 ro.build.software.version               u:object_r:exported_radio_prop:s0
 ro.fota.oem                             u:object_r:exported_radio_prop:s0
@@ -60,3 +65,8 @@ persist.vendor.wigig.npt.enable         u:object_r:vendor_default_prop:s0
 # Fix for WLAN tethering offload
 # SELinux : avc:  denied  { set } for property=wifi.active.interface pid=2918 uid=1010 gid=1010 scontext=u:r::s0 tcontext=u:object_r:default_prop:s0 tclass=property_service
 wifi.active.interface               u:object_r:exported_wifi_prop:s0
+
+# Accent Picker
+persist.sys.theme.accentcolor           u:object_r:theme_prop:s0
+persist.sys.theme.gradientcolor         u:object_r:theme_prop:s0
+
