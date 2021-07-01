@@ -73,6 +73,9 @@ AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := false
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
 
+# Board vendor for libperfmgr
+BOARD_VENDOR := xiaomi
+
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
