@@ -187,7 +187,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=adreno \
-    ro.hardware.vulkan=adreno
+    ro.hardware.vulkan=sdm660
 
 # DRM Service
 PRODUCT_PROPERTY_OVERRIDES += \
