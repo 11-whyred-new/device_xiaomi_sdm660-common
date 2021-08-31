@@ -466,4 +466,14 @@
         <!-- B y-intercept --> <item>-0.349361641294833436</item>
     </string-array>
 
+    <!-- Paths to the libraries that contain device specific key handlers -->
+    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
+        <item>/system_ext/priv-app/TouchGestures/TouchGestures.apk</item>
+    </string-array>
+
+    <!-- Names of the key handler classes -->
+    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
+        <item>com.android.touch.gestures.KeyHandler</item>
+    </string-array>
+
 </resources>
