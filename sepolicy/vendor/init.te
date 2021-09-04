@@ -2,6 +2,7 @@
 allow init sysfs_type:file { setattr };
 allow init iorapd_data_file:file getattr;
 allow init sysfs_graphics:file { open write };
+allow init blkio_dev:file { create open write };
 allow init socket_device:sock_file { unlink setattr create };
 allow init su:process { noatsecure  rlimitinh  siginh  transition };
 # USB Fastcharge
@@ -16,3 +17,4 @@ allow init bt_firmware_file:filesystem getattr;
 
 allow init vendor_file:file { execute };
 allow init proc_last_kmsg:file setattr;
+
