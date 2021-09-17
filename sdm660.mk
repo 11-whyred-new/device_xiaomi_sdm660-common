@@ -452,6 +452,10 @@ USE_DEX2OAT_DEBUG := false PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 WITH_DEXPREOPT_DEBUG_INFO := false
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.xiaomi_sdm660.qti
+
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \
