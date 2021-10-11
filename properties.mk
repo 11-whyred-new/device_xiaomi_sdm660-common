@@ -1,3 +1,4 @@
+
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true \
@@ -339,8 +340,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qti.inputopts.enable=true \
     persist.vendor.qti.inputopts.movetouchslop=0.6 \
     ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
-
-# Blurs
-    ro.surface_flinger.supports_background_blur=1 \
-    ro.sf.blurs_are_expensive=1 \
-    persist.sys.sf.disable_blurs=1
