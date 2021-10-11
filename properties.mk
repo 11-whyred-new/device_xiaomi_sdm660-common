@@ -256,6 +256,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.mode=concurrent \
     persist.vendor.qti.telephony.vt_cam_interface=2 \
     persist.vendor.radio.add_power_save=1 \
+    persist.vendor.radio.mt_sms_ack=30 \ 
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.atfwd.start=true \
     persist.vendor.radio.custom_ecc=1 \
@@ -265,6 +266,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=22,22 \
     ro.vendor.use_data_netmgrd=true \
     ro.vold.umsdirtyratio=20 \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
+    persist.sys.fflag.override.settings_provider_model=false \
     ro.ril.disable.power.collapse=0 \
     persist.vendor.radio.aosp_usr_pref_sel=true
 
