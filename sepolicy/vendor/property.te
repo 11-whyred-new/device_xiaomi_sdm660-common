@@ -12,3 +12,5 @@ type vendor_power_prop, property_type;
 
 # Camera
 type persist_camera_prop, property_type;
+
+#vendor_restricted_prop(vendor_camera_prop);
