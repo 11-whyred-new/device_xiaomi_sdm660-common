@@ -344,3 +344,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qti.inputopts.enable=true \
     persist.vendor.qti.inputopts.movetouchslop=0.6 \
     ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
+
+# GMS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase.ms=android-xiaomi-rev2 \
+    ro.com.google.ime.kb_pad_port_b=1
