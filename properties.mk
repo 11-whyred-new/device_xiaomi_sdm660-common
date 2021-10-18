@@ -173,11 +173,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
     ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
     ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000 \
-    ro.surface_flinger.set_display_power_timer_ms=10000 \
-    ro.surface_flinger.set_touch_timer_ms=5000 \
-    ro.surface_flinger.set_idle_timer_ms=9000 \
-    ro.surface_flinger.use_smart_90_for_video=true \
-    ro.surface_flinger.wcg_composition_dataspace=143261696 \
     debug.performance.tuning=1 \
     ro.surface_flinger.use_color_management=true \
     ro.surface_flinger.use_color_management=1 \
@@ -185,12 +180,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=0 \
     vendor.gralloc.enable_fb_ubwc=1 \
-    debug.sdm.support_writeback=0
-
-# The default sf phase offset is set to 6ms, to avoid it be included into next
-# vsync threshold, set high fps early sf and next vsync threshold phase offset
-# to 6.1ms, which is bigger than all sf phase offsets in normal frame rate.
-PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sdm.support_writeback=0 \
     debug.sf.high_fps_early_phase_offset_ns=6100000 \
     debug.sf.high_fps_early_gl_phase_offset_ns=9000000 \
     debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
