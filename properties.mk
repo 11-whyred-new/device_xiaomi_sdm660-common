@@ -361,3 +361,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_partial_split=1 \
     debug.hwui.use_buffer_age=false \
     vendor.display.perf_hint_window=50
+
+# SOC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=SDM660
