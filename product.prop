@@ -25,6 +25,6 @@ ro.config.sdha_apps_bg_min=8
 ro.com.google.ime.kb_pad_port_b=1
 
 # IORap
-ro.iorapd.enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true 
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
