@@ -139,7 +139,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.ltm.overlap=13 \
     persist.vendor.camera.enableAdvanceFeatures=0x347 \
     persist.camera.max.previewfps=60 \
-    persist.vendor.camera.max.previewfps=60
+    persist.vendor.camera.max.previewfps=60 \
+    persist.vendor.camera.perflock.enable=0
 
     PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android \
