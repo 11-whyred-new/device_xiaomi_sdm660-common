@@ -78,6 +78,7 @@ BOARD_VENDOR := xiaomi
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
+TARGET_NEEDS_RAW10_BUFFER_FIX := true
 
 # Display
 TARGET_USES_HWC2 := true
