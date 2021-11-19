@@ -16,12 +16,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
-    vendor.audio_hal.period_size=240 \
+    vendor.audio_hal.period_size=192 \
+    audio.offload.min.duration.secs=30 \
     ro.vendor.audio.sdk.fluencetype=fluence \
     persist.audio.fluence.voicecomm=true \
     persist.vendor.audio.fluence.voicecall=true \
-    persist.vendor.audio.fluence.voicerec=true \
-    persist.vendor.audio.fluence.speaker=false \
+    persist.vendor.audio.fluence.voicerec=false \
+    persist.vendor.audio.fluence.speaker=true \
     vendor.audio.tunnel.encode=false \
     persist.vendor.audio.ras.enabled=false \
     vendor.audio.offload.buffer.size.kb=64 \
