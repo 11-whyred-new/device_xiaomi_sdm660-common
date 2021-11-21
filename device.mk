@@ -544,3 +544,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOARD_PLATFORM := sdm660
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
+# mod
+PRODUCT_PACKAGES += \
+    dotOSModOverlay-SystemUI \
+    dotOSModOverlay-framework-res
+
