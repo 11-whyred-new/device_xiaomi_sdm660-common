@@ -487,5 +487,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# mod
+PRODUCT_PACKAGES += \
+    dotOSModOverlay-SystemUI \
+    dotOSModOverlay-framework-res
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
