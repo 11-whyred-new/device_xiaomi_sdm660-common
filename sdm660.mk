@@ -549,5 +549,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/Mi.ogg:$(TARGET_COPY_OUT_PRODUCT)/system/media/audio/ringtones/Mi.ogg \
     $(LOCAL_PATH)/media/Fresh.ogg:$(TARGET_COPY_OUT_PRODUCT)/system/media/audio/notifications/Fresh.ogg
 
+# mod
+PRODUCT_PACKAGES += \
+    dotOSModOverlay-SystemUI \
+    dotOSModOverlay-framework-res
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
