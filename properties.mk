@@ -136,7 +136,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.s5k3l8_ofilm.low.lux=379 \
     persist.vendor.s5k3l8_ofilm.light.lux=367 \
     persist.vendor.camera.HAL3.enabled=1 \
-    persist.vendor.camera.ltm.overlap=13
+    persist.vendor.camera.ltm.overlap=13 \
+    persist.vendor.camera.perflock.enable=0
 
     PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android \
