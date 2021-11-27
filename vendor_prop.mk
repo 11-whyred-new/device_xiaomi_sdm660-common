@@ -251,3 +251,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     profiler.force_disable_err_rpt=true \
     profiler.force_disable_err_rpt=1 \
     profiler.force_disable_ulog=1
+
+# IORap
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.iorapd.enable=true \
+    iorapd.perfetto.enable=true \
+    iorapd.readahead.enable=true
