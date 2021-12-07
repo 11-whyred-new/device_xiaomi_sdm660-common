@@ -42,4 +42,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
      vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
+
+    <!-- Whether to artificially interpret all signal strengths as one bar higher than 
+         they actually are -->
+    <bool name="config_inflateSignalStrength">true</bool>
+
 </resources>

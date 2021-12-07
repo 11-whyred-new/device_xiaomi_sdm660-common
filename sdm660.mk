@@ -76,9 +76,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
-# Adapt Launch 
+# Adapt Launch
 PRODUCT_COPY_FILES += \
  $(LOCAL_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
+
+# AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
 
 # Audio
 PRODUCT_PACKAGES += \
