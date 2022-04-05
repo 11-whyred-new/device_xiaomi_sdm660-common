@@ -53,3 +53,9 @@ ro.hwui.text_small_cache_width=1024
 ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=1024
+
+# Additional props
+ro.vendor.qti.cgroup_follow.enable=true 
+persist.vendor.qti.inputopts.enable=true 
+persist.vendor.qti.inputopts.movetouchslop=0.6
+ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
