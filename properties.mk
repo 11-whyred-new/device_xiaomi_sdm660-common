@@ -300,7 +300,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.is_type=5 \
+    persist.camera.is_type=4 \
     persist.camera.googfd.enable=1 \
     persist.camera.logical.default=1 \
     persist.camera.gzoom.at=0
@@ -316,3 +316,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase.ms=android-xiaomi-rev2 \
     ro.com.google.ime.kb_pad_port_b=1
+
+# Battery Efficiency
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ril.disable.power.collapse=0 \
+    ro.ril.power_collapse=1 \
+    power_supply.wakeup=enable \
+    profiler.force_disable_ulog=true \
+    profiler.force_disable_err_rpt=true \
+    profiler.force_disable_err_rpt=1 \
+    profiler.force_disable_ulog=1
