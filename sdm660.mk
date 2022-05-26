@@ -406,5 +406,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Via
 
+# Soong
+PRODUCT_BOARD_PLATFORM := sdm660
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
