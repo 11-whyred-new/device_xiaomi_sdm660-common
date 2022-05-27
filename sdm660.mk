@@ -356,6 +356,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power.stats@1.0-service.mock \
     android.hardware.power-service-qti \
     vendor.qti.hardware.perf@2.0.vendor
 
