@@ -344,3 +344,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     power.saving.mode=1 \
     pm.sleep_mode=1
 
+# Battery Efficiency
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ril.disable.power.collapse=0 \
+    ro.ril.power_collapse=1 \
+    power_supply.wakeup=enable \
+    profiler.force_disable_ulog=true \
+    profiler.force_disable_err_rpt=true \
+    profiler.force_disable_err_rpt=1 \
+    profiler.force_disable_ulog=1
