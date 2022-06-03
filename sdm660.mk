@@ -92,6 +92,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libhdmiedid \
     libhfp \
+    libldacBT_bco \
+    libldacBT_dec \
     libsndmonitor \
     libldacBT_dec \
     libbthost_if
@@ -139,6 +141,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.device@3.5:64 \
     android.hardware.camera.provider@2.6:64 \
     android.hardware.camera.provider@2.6 \
