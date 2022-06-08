@@ -87,14 +87,12 @@ ALL_DEFAULT_INSTALLED_MODULES += \
     $(RFS_MSM_MPSS_SYMLINKS) \
     $(RFS_MSM_SLPI_SYMLINKS)
 
-EGL_SYMLINKS := $(TARGET_OUT_VENDOR)/lib/libGLESv2_adreno.so \
-    $(TARGET_OUT_VENDOR)/lib/libEGL_adreno.so \
-    $(TARGET_OUT_VENDOR)/lib64/libEGL_adreno.so
-$(EGL_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+EGL_SYMLINK := $(TARGET_OUT_VENDOR)/lib/libGLESv2_adreno.so
+$(EGL_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@mkdir -p $(dir $@)
 	$(hide) ln -sf egl/$(notdir $@) $@
 
-ALL_DEFAULT_INSTALLED_MODULES += $(EGL_SYMLINKS)
+ALL_DEFAULT_INSTALLED_MODULES += $(EGL_SYMLINK)
 
 IMS_LIBS := libimscamera_jni.so libimsmedia_jni.so
 IMS_SYMLINKS := $(addprefix $(TARGET_OUT_SYSTEM_EXT_APPS_PRIVILEGED)/ims/lib/arm64/,$(notdir $(IMS_LIBS)))
