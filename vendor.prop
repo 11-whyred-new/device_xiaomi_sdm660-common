@@ -221,6 +221,7 @@ persist.vendor.ims.disableQXDMLogs=1
 
 # IORap
 ro.iorapd.enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
 
