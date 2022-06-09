@@ -24,6 +24,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # IORAP
 include build/make/target/product/iorap_large_memory_config.mk
 
+# Dalvik
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk )
+
 # dirac
 $(call inherit-product, vendor/dirac/dirac.mk)
 

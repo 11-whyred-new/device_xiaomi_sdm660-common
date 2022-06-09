@@ -16,4 +16,4 @@ ro.vold.umsdirtyratio=20
 ro.ril.disable.power.collapse=0
 
 # WiFi Display
-media.wfd.max_resolution=5
+media.wfd.max_resolution=7
