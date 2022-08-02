@@ -29,6 +29,9 @@ include $(LOCAL_PATH)/vendor_prop.mk
 # Dirac
 $(call inherit-product, vendor/xiaomi/whyred/dirac/dirac.mk)
 
+# Hotword blobs
+$(call inherit-product, vendor/xiaomi/google/google.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
