@@ -210,6 +210,7 @@ on boot
     mkdir /data/vendor/camera 0770 camera camera
 
     # Touchscreen
+    chown system system /sys/touchpanel/double_tap
     chown system system /proc/tp_gesture
     chmod 0664  /proc/tp_gesture
 
