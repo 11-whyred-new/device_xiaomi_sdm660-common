@@ -395,3 +395,6 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/spidev7.1                                       0664    system  system
 
 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp power/control 0664 system graphics
+
+#power_state device node
+/dev/power_state           0660   system      system
