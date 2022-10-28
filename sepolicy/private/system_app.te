@@ -1,5 +1,2 @@
 hal_client_domain(system_app, hal_mlipay)
 get_prop(system_app, vendor_persist_camera_prop)
-
-allow system_app sysfs_leds:file { open getattr write };
-allow system_app sysfs:file { getattr open read write };
