@@ -398,3 +398,7 @@ firmware_directories /vendor/firmware_mnt/image/
 
 #power_state device node
 /dev/power_state           0660   system      system
+
+
+#KGSL
+/sys/class/kgsl/kgsl-3d0 perfcounter                 0660     root    shell
