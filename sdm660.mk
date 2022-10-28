@@ -30,7 +30,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 include build/make/target/product/iorap_large_memory_config.mk
 
 # dirac
-$(call inherit-product, vendor/xiaomi/dirac/dirac.mk)
+#$(call inherit-product, vendor/xiaomi/dirac/dirac.mk)
 
 # Permissions
 PRODUCT_COPY_FILES += \
