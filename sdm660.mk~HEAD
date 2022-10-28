@@ -30,7 +30,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 include build/make/target/product/iorap_large_memory_config.mk
 
 # dirac
-$(call inherit-product, vendor/xiaomi/dirac/dirac.mk)
+$(call inherit-product, vendor/dirac/dirac.mk)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -171,6 +171,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 endif
 
+# Device-specific Settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.sdm660 \
@@ -195,11 +199,15 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
     vendor.display.config@1.1
 
+<<<<<<< HEAD:sdm660.mk
 # Doze
 PRODUCT_PACKAGES += \
     XiaomiDoze
 
 # DPM
+=======
+# DRM
+>>>>>>> f43583fd... whyred: Convert XiaomiDoze into XiaomiParts:device.mk
 PRODUCT_PACKAGES += \
     libshim_dpmframework
 
@@ -285,6 +293,7 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc \
+    init.xiaomi_parts.rc \
     init.qcom.power.rc
 
 # Iorap
@@ -480,6 +489,10 @@ PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_PACKAGES += \
     dotOSModOverlay-SystemUI \
     dotOSModOverlay-framework-res
+
+# Xiaomi
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
