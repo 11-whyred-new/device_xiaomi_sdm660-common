@@ -8,7 +8,6 @@ dontaudit { fsck toolbox vdc zygote } self:capability kill;
 dontaudit adbd self:capability sys_admin;
 dontaudit blkid_untrusted self:capability sys_admin;
 dontaudit crash_dump self:capability sys_admin;
-dontaudit extra_free_kbytes self:capability sys_admin;
 dontaudit fsck self:capability sys_admin;
 dontaudit hal_power_default self:capability sys_admin;
 dontaudit hal_wifi_supplicant_default self:capability sys_admin;
@@ -27,7 +26,6 @@ dontaudit vendor_init-qti-dcvs-sh self:capability sys_admin;
 dontaudit vendor_modprobe self:capability sys_admin;
 dontaudit vendor_msm_irqbalanced self:capability sys_admin;
 dontaudit vendor_pd_mapper self:capability sys_admin;
-dontaudit vendor_toolbox self:capability sys_admin;
 dontaudit vold_prepare_subdirs self:capability sys_admin;
 
 # We never apply OTAs when GSI is running
@@ -37,34 +35,14 @@ dontaudit hal_bootctl_default gsi_metadata_file:dir search;
 dontaudit { gmscore_app hal_camera_default } property_type:file r_file_perms;
 dontaudit {
   rild
-  vendor_hal_neuralnetworks_default
   vendor_qti_init_shell
 } default_prop:file r_file_perms;
-
-# why would a script want to access rootfs?
-dontaudit vendor_wcnss_service rootfs:dir { open read };
 
 # untrusted_app shouldn't be allowed to read SELinux status
 dontaudit untrusted_app_all selinuxfs:file read;
 
 # all other no-context attempt by apps (as spotted on iQIYI)
 dontaudit untrusted_app_all sysfs_net:dir search;
-
-# clear up diagnostics denials on user build
-dontaudit {
-  hal_audio_default
-  hal_graphics_composer_default
-  hal_sensors_default
-  rild
-  vendor_adpl
-  vendor_cnd
-  vendor_dpmd
-  vendor_hal_imsrtp
-  vendor_ims
-  vendor_netmgrd
-  vendor_sensors_qti
-  vendor_qti
-} vendor_diag_device:chr_file rw_file_perms;
 
 # clear up tracing denials on user build
 dontaudit {
