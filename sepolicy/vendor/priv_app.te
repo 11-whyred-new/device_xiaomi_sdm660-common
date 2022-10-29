@@ -2,6 +2,8 @@ allow priv_app vendor_camera_prop:file { read open getattr };
 get_prop(priv_app, theme_prop)
 allow priv_app exported_camera_prop:file { read open getattr };
 
+allow priv_app sysfs_graphics:file { open read };
+
 allow priv_app sysfs_kgsl:lnk_file read;
 allow priv_app sysfs_kgsl:dir { search };
 dontaudit priv_app sysfs_android_usb:file open;
