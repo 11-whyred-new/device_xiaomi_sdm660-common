@@ -29,6 +29,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # IORAP
 include build/make/target/product/iorap_large_memory_config.mk
 
+# Disable APEX compression
+PRODUCT_COMPRESSED_APEX := false
+
 # dirac
 #$(call inherit-product, vendor/xiaomi/dirac/dirac.mk)
 
@@ -87,6 +90,7 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
+    audio.usbv2.default \
     libaudio-resampler \
     libqcompostprocbundle \
     libqcomvisualizer \
