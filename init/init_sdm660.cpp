@@ -82,7 +82,7 @@ void set_dalvik_props() {
     } else {
         // from - phone-xxhdpi-4096-dalvik-heap.mk
         heapstartsize = "8m";
-        heapgrowthlimit = "256m";
+        heapgrowthlimit = "192m";
         heapsize = "512m";
         heaptargetutilization = "0.6";
         heapminfree = "8m";
