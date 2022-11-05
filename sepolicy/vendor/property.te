@@ -4,7 +4,7 @@ type thermal_engine_prop, property_type;
 type camera_ro_prop, property_type;
 type fm_prop, property_type;
 type vendor_power_prop, property_type;
-type vendor_camera_prop, property_type;;
+type vendor_camera_prop, property_type;
 
 # Spectrum
 type spectrum_prop, property_type;
