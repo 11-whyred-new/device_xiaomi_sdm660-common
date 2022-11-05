@@ -81,7 +81,7 @@ PRODUCT_COPY_FILES += \
 
 # AR config
 PRODUCT_COPY_FILES += \
-   device/xiaomi/lavender/configs/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.ar.xml
+   device/xiaomi/sdm660-common/configs/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.ar.xml
 
 # Audio
 PRODUCT_PACKAGES += \
