@@ -21,7 +21,6 @@ ALLOW_MISSING_DEPENDENCIES := true
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno509
 
 # Architecture
 TARGET_ARCH := arm64
