@@ -2439,11 +2439,6 @@ case "$target" in
             # re-enable thermal and BCL hotplug
             echo 1 > /sys/module/msm_thermal/core_control/enabled
 
-            # Enable input boost configuration
-            # simon.ma+@2018/09/28,modify the input_boost_freq and input_boost_ms to make the anim smooth
-            echo "0:1036800 4:1056000" > /sys/module/cpu_boost/parameters/input_boost_freq
-            echo 450 > /sys/module/cpu_boost/parameters/input_boost_ms
-
             # Set Memory parameters
             configure_memory_parameters
 
