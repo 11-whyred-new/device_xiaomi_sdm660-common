@@ -12,6 +12,15 @@ dalvik.vm.image-dex2oat-filter=speed-profile
 dalvik.vm.image-dex2oat-threads=8 
 dalvik.vm.dex2oat-minidebuginfo=false
 dalvik.vm.minidebuginfo=false
+pm.dexopt.first-boot=quicken
+pm.dexopt.bg-dexopt?=speed-profile
+pm.dexopt.install=speed-profile
+
+# Dex2oat
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-threads=8 
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
 
 # Audio
 af.fast_track_multiplier=1
@@ -36,7 +45,7 @@ vendor.audio.offload.multiple.enabled=false
 vendor.audio.offload.passthrough=false
 ro.vendor.audio.sdk.ssr=false
 vendor.audio.offload.gapless.enabled=true
-vendor.audio.safx.pbe.enabled=false
+vendor.audio.safx.pbe.enabled=true
 vendor.audio.parser.ip.buffer.size=262144
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.use.sw.alac.decoder=true
@@ -356,6 +365,3 @@ profiler.debugmonitor=false
 profiler.launch=false
 logcat.live=disable
 persist.camera.debug.logfile=0
-
-# Disable vsync for cpu rendered apps
-debug.cpurend.vsync=false

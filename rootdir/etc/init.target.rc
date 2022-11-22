@@ -371,3 +371,6 @@ on boot
 # FPS Info
   chown system graphics /sys/devices/virtual/graphics/fb0/measured_fps
   chmod 0660 /sys/devices/virtual/graphics/fb0/measured_fps
+
+# Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
