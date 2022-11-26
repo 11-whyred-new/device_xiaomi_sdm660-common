@@ -95,3 +95,5 @@ dontaudit untrusted_app {
   sysfs_net
   rootfs
 }:file rwx_file_perms;
+
+dontaudit gmscore_app { bt_firmware_file firmware_file }:filesystem getattr;
